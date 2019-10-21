@@ -1,2 +1,19 @@
-This is a repository for everying on the website [chenpost](chenpost.com)
-using AWS Route 53 and AWS S3
+# Introduction
+
+This is a repository for my website [chenpost](chenpost.com).
+
+## Built-with
+
+* AWS Route 53
+
+* AWS S3
+
+* HTML
+
+* CSS
+
+* JavaScript
+
+## Author
+
+[Qi Chen](https://www.linkedin.com/in/qifchen/) - [swordwielder](http://github.com/swordwielder)
