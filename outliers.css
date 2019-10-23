@@ -1,0 +1,13 @@
+body {
+
+	height: 100%;
+	width: 100%;
+
+	background-image: url("business.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+
+<link rel="stylesheet" href="./outliers.css" type="text/css">
