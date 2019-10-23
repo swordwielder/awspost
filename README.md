@@ -1,6 +1,6 @@
 # Introduction
 
-This is a repository for my website [chenpost](chenpost.com).
+This is a repository for my website [chenpost](www.chenpost.com).
 
 ## Built-with
 
