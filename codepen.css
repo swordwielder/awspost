@@ -1,11 +1,10 @@
-
- body{
+body{
 	margin: 0;
 	padding: 0;
 	font: 300 14px/18px Roboto;
 	background-image: url('../images/texture.png');
  }
-  
+
 
  *,
 :after,
@@ -302,11 +301,11 @@ li.flyout-mega>a:hover +.flyout-mega-wrap{
 		background-color: #23364B;
 		width: 100%;
 	}
-	
+
 	.exo-menu > li > a{
 		width:100% ;
 	    display:none ;
-	
+
 	}
 	.exo-menu > li{
 		width:100%;
@@ -315,7 +314,7 @@ li.flyout-mega>a:hover +.flyout-mega-wrap{
 	  display:block ;
 	  	padding: 20px 22px;
 	}
-	
+
 .mega-menu, .Images, .Blog,.flyout-right>ul,
 .flyout-left>ul, li.drop-down>ul{
 		position:relative;
