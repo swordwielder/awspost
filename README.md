@@ -8,6 +8,8 @@ This is a repository for my website www.chenpost.com .
 
 * AWS S3
 
+* ReactJS
+
 * HTML
 
 * CSS
