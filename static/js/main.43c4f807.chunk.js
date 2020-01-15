@@ -1,3 +1,6 @@
+
+
+
 (this["webpackJsonpchenpost-app"] = this["webpackJsonpchenpost-app"] || []).push([
     [0], {
         107: function (e, a, t) {
@@ -16,7 +19,7 @@
                 p = t.n(d),
                 E = t(5),
                 f = t.n(E);
-            var b = function (e) {
+            var g = function (e) {
                 var a = Object(n.useState)({}),
                     t = Object(m.a)(a, 2),
                     r = t[0],
@@ -71,7 +74,7 @@
                     name: "github"
                 }))) : null)
             };
-            var g = function () {
+            var b = function () {
                 var e = Object(n.useState)(""),
                     a = Object(m.a)(e, 2),
                     t = a[0],
@@ -133,7 +136,7 @@
             var v = function (e) {
                 return l.a.createElement("div", {
                     className: "mi-wrapper"
-                }, l.a.createElement(h, null), l.a.createElement(g, null), e.children)
+                }, l.a.createElement(h, null), l.a.createElement(b, null), e.children)
             };
             var N = function () {
                     var e = Object(n.useState)(""),
@@ -191,7 +194,7 @@
                         className: "mi-home-content"
                     }, l.a.createElement("h1", null, "Hi, I am ", l.a.createElement("span", {
                         className: "color-theme"
-                    }, t.name)), l.a.createElement("p", null, t.aboutContent), l.a.createElement(b, {
+                    }, t.name)), l.a.createElement("h4", null, t.aboutContent), l.a.createElement(g, {
                         bordered: !0
                     })))))))
                 },
@@ -238,10 +241,10 @@
                         p = Object(m.a)(d, 2),
                         E = p[0],
                         f = p[1],
-                        b = Object(n.useState)([]),
-                        g = Object(m.a)(b, 2),
-                        h = g[0],
-                        N = g[1];
+                        g = Object(n.useState)([]),
+                        b = Object(m.a)(g, 2),
+                        h = b[0],
+                        N = b[1];
                     return Object(n.useEffect)((function () {
                         u.a.get("/api/information").then((function (e) {
                             s(e.data)
@@ -349,10 +352,10 @@
                     name: e.icon
                 })), l.a.createElement("h4", null, e.title))
             };
-            var x = function (e) {
+            var T = function (e) {
                 return l.a.createElement("div", {
                     className: "mi-progress"
-                }, l.a.createElement("h6", {
+                }, l.a.createElement("h5", {
                     className: "mi-progress-title"
                 }, e.title), l.a.createElement("div", {
                     className: "mi-progress-inner"
@@ -369,7 +372,7 @@
                     }
                 }))))
             };
-            var T = function (e) {
+            var x = function (e) {
                 var a = e.resumeData,
                     t = a.year,
                     n = a.position,
@@ -389,7 +392,7 @@
                     className: "mi-resume-company"
                 }, c || i), l.a.createElement("p", null, o)))
             };
-            var _ = function () {
+            var B = function () {
                     var e = Object(n.useState)([]),
                         a = Object(m.a)(e, 2),
                         t = a[0],
@@ -423,7 +426,7 @@
                             once: !0,
                             className: "col-lg-6 mt-30",
                             key: e.title
-                        }, l.a.createElement(x, {
+                        }, l.a.createElement(T, {
                             title: e.title,
                             percentage: e.value
                         }))
@@ -439,7 +442,7 @@
                     }), l.a.createElement("div", {
                         className: "mi-resume-wrapper"
                     }, o.map((function (e) {
-                        return l.a.createElement(T, {
+                        return l.a.createElement(x, {
                             key: e.id,
                             resumeData: e
                         })
@@ -451,14 +454,14 @@
                     }), l.a.createElement("div", {
                         className: "mi-resume-wrapper"
                     }, E.map((function (e) {
-                        return l.a.createElement(T, {
+                        return l.a.createElement(x, {
                             key: e.id,
                             resumeData: e
                         })
                     }))))))
                 },
                 U = t(109);
-            var B = function (e) {
+            var _ = function (e) {
                 var a = Object(n.useState)(!1),
                     t = Object(m.a)(a, 2),
                     r = t[0],
@@ -499,7 +502,7 @@
                         t = a[0],
                         r = a[1];
                     return Object(n.useEffect)((function () {
-                        u.a.get("/api/portfolios").then((function (e) {
+                        u.a.get("/api/portfolio").then((function (e) {
                             r(e.data)
                         }))
                     })), l.a.createElement(v, null, l.a.createElement("div", {
@@ -507,7 +510,7 @@
                     }, l.a.createElement("div", {
                         className: "container"
                     }, l.a.createElement(O, {
-                        title: "Portfolios"
+                        title: "Portfolio"
                     }), l.a.createElement("div", {
                         className: "row mt-30-reverse"
                     }, t.map((function (e) {
@@ -516,15 +519,15 @@
                             offset: 200,
                             className: "col-lg-4 col-md-6 col-12 mt-30",
                             key: e.id
-                        }, l.a.createElement(B, {
+                        }, l.a.createElement(_, {
                             content: e
                         }))
                     }))))))
                 },
-                H = t(23),
-                L = t(110),
-                R = t(111),
-                W = t(112);
+                R = t(23),
+                W = t(110),
+                H = t(111),
+                L = t(112);
 
             function G(e, a) {
                 var t = Object.keys(e);
@@ -549,15 +552,15 @@
                     p = Object(m.a)(d, 2),
                     E = p[0],
                     f = p[1],
-                    b = Object(n.useState)({
+                    g = Object(n.useState)({
                         name: "",
                         email: "",
                         subject: "",
                         message: ""
                     }),
-                    g = Object(m.a)(b, 2),
-                    h = g[0],
-                    N = g[1],
+                    b = Object(m.a)(g, 2),
+                    h = b[0],
+                    N = b[1],
                     y = Object(n.useState)(!1),
                     w = Object(m.a)(y, 2),
                     k = w[0],
@@ -571,13 +574,13 @@
                             for (var a = 1; a < arguments.length; a++) {
                                 var t = null != arguments[a] ? arguments[a] : {};
                                 a % 2 ? G(t, !0).forEach((function (a) {
-                                    Object(H.a)(e, a, t[a])
+                                    Object(R.a)(e, a, t[a])
                                 })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : G(t).forEach((function (a) {
                                     Object.defineProperty(e, a, Object.getOwnPropertyDescriptor(t, a))
                                 }))
                             }
                             return e
-                        }({}, h, Object(H.a)({}, e.currentTarget.name, e.currentTarget.value)))
+                        }({}, h, Object(R.a)({}, e.currentTarget.name, e.currentTarget.value)))
                     };
                 return Object(n.useEffect)((function () {
                     u.a.get("/api/contactinfo").then((function (e) {
@@ -659,7 +662,7 @@
                     className: "mi-contact-infoblock"
                 }, l.a.createElement("span", {
                     className: "mi-contact-infoblock-icon"
-                }, l.a.createElement(L.a, null)), l.a.createElement("div", {
+                }, l.a.createElement(W.a, null)), l.a.createElement("div", {
                     className: "mi-contact-infoblock-content"
                 }, l.a.createElement("h6", null, "Phone"), t.map((function (e) {
                     return l.a.createElement("p", {
@@ -672,7 +675,7 @@
                     className: "mi-contact-infoblock"
                 }, l.a.createElement("span", {
                     className: "mi-contact-infoblock-icon"
-                }, l.a.createElement(R.a, null)), l.a.createElement("div", {
+                }, l.a.createElement(H.a, null)), l.a.createElement("div", {
                     className: "mi-contact-infoblock-content"
                 }, l.a.createElement("h6", null, "Email"), o.map((function (e) {
                     return l.a.createElement("p", {
@@ -684,7 +687,7 @@
                     className: "mi-contact-infoblock"
                 }, l.a.createElement("span", {
                     className: "mi-contact-infoblock-icon"
-                }, l.a.createElement(W.a, null)), l.a.createElement("div", {
+                }, l.a.createElement(L.a, null)), l.a.createElement("div", {
                     className: "mi-contact-infoblock-content"
                 }, l.a.createElement("h6", null, "Address"), l.a.createElement("p", null, E))) : null))))))
             };
@@ -698,9 +701,9 @@
                         component: P
                     }), l.a.createElement(o.a, {
                         path: "/resume",
-                        component: _
+                        component: B
                     }), l.a.createElement(o.a, {
-                        path: "/portfolios",
+                        path: "/portfolio",
                         component: q
                     }), l.a.createElement(o.a, {
                         path: "/contact",
@@ -724,16 +727,16 @@
                         github: "https://github.com/swordwielder"
                     },
                     brandImage: "/images/headshot.jpg",
-                    aboutImage: "/images/aboutSmall.jpg",
+                    aboutImage: "/images/aboutSmall-1.jpg",
                     aboutImageLg: "/images/aboutLarge.jpg",
                     cvfile: "/files/Qi_Chen_Resume.pdf"
                 },
-                Q = [{
+                J = [{
                     title: "API Development",
                     icon: "code",
                     details: "Web Scrapping"
                 }],
-                J = [{
+                Q = [{
                     id: 1,
                     content: "Solid",
                     author: {
@@ -793,35 +796,42 @@
                 K = [{
                     id: 1,
                     title: "Coinbase Web Scraper",
-                    subtitle: "This is a WebScrapper written in Python to Scrape cryptocurrency Coin Data",
+                    subtitle: "This is a WebScrapper written in Python to Scrape cryptocurrency Coin Data on coinbase",
                     imageUrl: "/images/CoinbaseSmall.png",
                     largeImageUrl: ["/images/CoinbaseLarge.jpg"],
                     url: "https://github.com/swordwielder/pythonwebscrapper"
+                }, {
+                    id: 2,
+                    title: "Discord Bot",
+                    subtitle: "A Discord bot that Provides Stock, Weather Data querying as well as other features such as Image Recognition, Music Player, and Joke Telling",
+                    imageUrl: "/images/discordBot.png",
+                    largeImageUrl: ["/images/discordBot.png"],
+                    url: "https://github.com/swordwielder/discordbot"
                 }],
                 X = {
                     workingExperience: [{
                         id: 1,
                         year: "2019 - Present",
                         position: "Independent Developer",
-                        details: "\u2022Created a Discord bot that gives live weather, crypto and stock data through API calls in Python. \n \u2022Developed a REST API for returning sports statistics and betting odds.  \n \u2028 \u2022 Implemented chenpost.com on an AWS S3 Bucket to allow clients explore and inquire on potential partnerships.".split('\n',5)
+                        details: '\u2022 Created a Discord bot that gives live weather, crypto and stock data  through API calls in Python  {"\n"}      \u2424 \u2022 Developed a REST API for returning sports statistics and betting odds.    "\n"<br/>       \u2022 Implemented chenpost.com on an AWS S3 Bucket to allow clients         explore and inquire on potential partnerships.'
                     }, {
                         id: 2,
                         year: "2018 - 2019",
                         position: "Data Engineer",
                         company: "Vurteau",
-                        details: " \u2022Developed an API to distribute advertising creative data from  S3 Bucket, with Cache to optimize server load usage. (Deployed on AWS EC2) \u2029 \u2022 Utilized pandas and numpy to perform data analysis and modeling         on advertising campaigns performance for new insight.         \u2022 Contributed Ideas to Vurteau\u2019s business Model that resulted in our         initial $500k funding.         \u2022 Provided research on various web technologies and costs that would         help optimize the technological procedures. (AWS Media Tailor for ad         insertion, S3 for Storage, EC2 for running Server)"
+                        details: " \u2022Developed an API to distribute advertising creative data from  <br>         S3 Bucket, with Cache to optimize server load usage. (Deployed on  AWS EC2) \n  \t \n  \n     \u2424  \n \u2022 Utilized pandas and numpy to perform data analysis and modeling         on advertising campaigns performance for new insight.         \u2022 Contributed Ideas to Vurteau\u2019s business Model that resulted in our         initial $500k funding.         \u2022 Provided research on various web technologies and costs that would         help optimize the technological procedures. (AWS Media Tailor for ad         insertion, S3 for Storage, EC2 for running Server)"
                     }, {
                         id: 3,
                         year: "2015 - 2018",
                         position: "Product Engineer & Content Manager",
                         company: "Dahua Tech USA Inc.",
-                        details: "\u2022 Updated and maintained Dahuawiki.com to provide better technical  support to the customers including adding YouTube tutorials with         7000 daily hits on website tracked through Google Analytics.         \u2022 Hardware testing/support for clients including but not limited to         NVRs, DVRs, IP Cameras, and Analog Cameras via Salesforce."
+                        details: "\u2022 Updated and maintained Dahuawiki.com to provide better technical         support to the customers including adding YouTube tutorials with         7000 daily hits on website tracked through Google Analytics.         \u2022 Hardware testing/support for clients including but not limited to         NVRs, DVRs, IP Cameras, and Analog Cameras via Salesforce."
                     }, {
                         id: 4,
                         year: "2014 - 2015",
                         position: "Computer Science Tutor",
                         company: "Computer Science Learning Center, University of Memphis",
-                        details: " Helped students with coursework and checked coding errors  \n Taught & Mentored high school students with interests in Computer         Science in the field of game development using Ren\u2019Py."
+                        details: " Helped students with coursework and checked coding errors         \u2022 Taught & Mentored high school students with interests in Computer         Science in the field of game development using Ren\u2019Py."
                     }, {
                         id: 5,
                         year: "2013 - 2015",
@@ -851,12 +861,12 @@
             F.onGet("/api/information").reply((function (e) {
                 return [200, Y]
             })), F.onGet("/api/services").reply((function (e) {
-                return [200, Q]
-            })), F.onGet("/api/reviews").reply((function (e) {
                 return [200, J]
+            })), F.onGet("/api/reviews").reply((function (e) {
+                return [200, Q]
             })), F.onGet("/api/skills").reply((function (e) {
                 return [200, $]
-            })), F.onGet("/api/portfolios").reply((function (e) {
+            })), F.onGet("/api/portfolio").reply((function (e) {
                 return [200, K]
             })), F.onGet("/api/experience").reply((function (e) {
                 return [200, X]
@@ -878,4 +888,4 @@
         [45, 1, 2]
     ]
 ]);
-//# sourceMappingURL=main.2b11e5e9.chunk.js.map
+//# sourceMappingURL=main.43c4f807.chunk.js.map
